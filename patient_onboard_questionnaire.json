@@ -1,0 +1,288 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "308",
+    "url": "http://example.org/fhir/Questionnaire/example-questionnaire",
+    "status": "active",
+    "subjectType": ["Patient"],
+    "date": "@today()",
+    "item": [
+        {
+        "linkId": "insurance_types",
+        "text": "Are you covered by any of the following types of insurance?",
+        "type": "choice",
+        "required": true,
+        "answerOption": [
+            {
+                "valueCoding": {
+                    "code": "nhif",
+                    "display": "NHIF"
+                }
+            },
+            {
+                "valueCoding": {
+                    "code": "private",
+                    "display": "Private Insurance"
+                }
+            }
+        ],
+        "repeats": true
+        },
+        {
+            "linkId": "hospital_selection",
+            "text": "At which hospital would you like to be treated?",
+            "type": "choice",
+            "repeats": false,
+            "answerOption": [
+                {
+                    "valueCoding": {
+                        "code": "ssuh",
+                        "display": "St. Scholastica Uzima Hospital"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "nmslk",
+                        "display": "Nimoli Medical Services Ltd Kasarani"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "mmnh",
+                        "display": "Mkunga Maternity and Nursing Home"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "msnhe",
+                        "display": "Marie Stopes Nursing Home Eastleigh"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "last_menstrual_cycle",
+            "text": "When was your last menstrual period?",
+            "type": "date",
+            "required": "false"
+        },
+        {
+        "linkId": "prev_pregnancy",
+        "text": "Have you ever been pregnant before? (YES/NO/Prefer not to say)",
+        "type": "choice",
+        "answerOption": [
+            {
+                "valueCoding": {
+                    "code": "yes",
+                    "display": "Yes"
+                }
+            },
+            {
+                "valueCoding": {
+                    "code": "no",
+                    "display": "No"
+                }
+            },
+            {
+                "valueCoding": {
+                    "code": "prefernottosay",
+                    "display": "Prefer not to say"
+                }
+            }
+        ]
+        },
+        {
+        "linkId": "health_conditions",
+        "text": "Do you have any health conditions?",
+        "type": "choice",
+        "answerOption": [
+            {
+                "valueCoding": {
+                    "code": "YES",
+                    "display": "Yes"
+                }
+            },
+            {
+                "valueCoding": {
+                    "code": "NO",
+                    "display": "No"
+                }
+            },
+            {
+                "valueCoding": {
+                    "code": "PreferNotToSay",
+                    "display": "Prefer not to say"
+                }
+            }
+        ]
+        },
+        {
+        "linkId": "6",
+        "text": "Which health conditions do you have?",
+        "type": "choice",
+        "answerOption": [
+            {
+            "valueCoding": {
+                "code": "Diabetes",
+                "display": "Diabetes"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "HighBloodPressure",
+                "display": "High blood pressure"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "Anemia",
+                "display": "Anemia"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "Other",
+                "display": "Other"
+            }
+            }
+        ],
+        "enableWhen": [
+            {
+            "question": "health_conditions",
+            "operator": "=",
+            "answerBoolean": true
+            }
+        ],
+        "repeats": true
+        },
+        {
+        "linkId": "7",
+        "text": "Can you specify your health condition?",
+        "type": "string",
+        "enableWhen": [
+            {
+            "question": "6",
+            "operator": "=",
+            "answerCoding": {
+                "code": "Other"
+            }
+            }
+        ]
+        },
+        {
+        "linkId": "8",
+        "text": "Did you have any complications in your previous pregnancy?",
+        "type": "choice",
+        "answerOption": [
+            {
+            "valueCoding": {
+                "code": "YES",
+                "display": "Yes"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "NO",
+                "display": "No"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "PreferNotToSay",
+                "display": "Prefer not to say"
+            }
+            }
+        ],
+        "enableWhen": [
+            {
+                "question": "4",
+                "operator": "=",
+                "answerCoding": {
+                    "code": "YES"
+                }
+            }
+        ]
+        },
+        {
+        "linkId": "9",
+        "text": "What complications did you experience in your previous pregnancy?",
+        "type": "choice",
+        "enableWhen": [
+            {
+                "question": "8",
+                "operator": "=",
+                "answerCoding": {
+                    "code": "YES"
+                }
+            }
+        ],
+        "answerOption": [
+            {
+            "valueCoding": {
+                "code": "Diabetes",
+                "display": "Diabetes"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "Hypertension",
+                "display": "Hypertension"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "PretermBirth",
+                "display": "Baby born more than 3 weeks early"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "HeavyBleeding",
+                "display": "Heavy bleeding before, during, or after giving birth"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "CSection",
+                "display": "C-section"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "LossOfBaby",
+                "display": "Loss of the baby after 3 months"
+            }
+            },
+            {
+            "valueCoding": {
+                "code": "Other",
+                "display": "Other"
+            }
+            }
+        ],
+        "enableWhen": [
+            {
+            "question": "8",
+            "operator": "=",
+            "answerCoding": {
+                "code": "YES"
+            }
+            }
+        ],
+        "repeats": true
+        },
+        {
+        "linkId": "10",
+        "text": "Can you specify your complication?",
+        "type": "string",
+        "enableWhen": [
+            {
+            "question": "9",
+            "operator": "=",
+            "answerCoding": {
+                "code": "Other"
+            }
+            }
+        ]
+        }
+    ]
+    }
