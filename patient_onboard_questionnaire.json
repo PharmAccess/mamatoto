@@ -1,4 +1,4 @@
-{
+ j dfopf o a{
     "resourceType": "Questionnaire",
     "id": "308",
     "url": "http://example.org/fhir/Questionnaire/example-questionnaire",
@@ -116,7 +116,7 @@
         ]
         },
         {
-        "linkId": "6",
+        "linkId": "health_conditions_list",
         "text": "Which health conditions do you have?",
         "type": "choice",
         "answerOption": [
@@ -155,7 +155,7 @@
         "repeats": true
         },
         {
-        "linkId": "7",
+        "linkId": "health_conditions_other",
         "text": "Can you specify your health condition?",
         "type": "string",
         "enableWhen": [
@@ -169,7 +169,7 @@
         ]
         },
         {
-        "linkId": "8",
+        "linkId": "prev_pregnancy_complications",
         "text": "Did you have any complications in your previous pregnancy?",
         "type": "choice",
         "answerOption": [
@@ -203,7 +203,7 @@
         ]
         },
         {
-        "linkId": "9",
+        "linkId": "prev_pregnancy_complications_list",
         "text": "What complications did you experience in your previous pregnancy?",
         "type": "choice",
         "enableWhen": [
@@ -271,7 +271,7 @@
         "repeats": true
         },
         {
-        "linkId": "10",
+        "linkId": "prev_pregnancy_complications_other",
         "text": "Can you specify your complication?",
         "type": "string",
         "enableWhen": [
