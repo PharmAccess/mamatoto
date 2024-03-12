@@ -99,19 +99,19 @@
             "answerOption": [
                 {
                     "valueCoding": {
-                        "code": "YES",
+                        "code": "yes",
                         "display": "Yes"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "NO",
+                        "code": "no",
                         "display": "No"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "PreferNotToSay",
+                        "code": "prefernottosay",
                         "display": "Prefer not to say"
                     }
                 }
@@ -124,26 +124,20 @@
             "answerOption": [
                 {
                     "valueCoding": {
-                        "code": "Diabetes",
+                        "code": "diabetes",
                         "display": "Diabetes"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "HighBloodPressure",
+                        "code": "highbloodpressure",
                         "display": "High blood pressure"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "Anemia",
+                        "code": "anemia",
                         "display": "Anemia"
-                    }
-                },
-                {
-                    "valueCoding": {
-                        "code": "Other",
-                        "display": "Other"
                     }
                 }
             ],
@@ -158,17 +152,8 @@
         },
         {
             "linkId": "health_conditions_other",
-            "text": "Can you specify your health condition?",
-            "type": "string",
-            "enableWhen": [
-                {
-                    "question": "6",
-                    "operator": "=",
-                    "answerCoding": {
-                        "code": "Other"
-                    }
-                }
-            ]
+            "text": "Please list any other conditions",
+            "type": "string"
         },
         {
             "linkId": "prev_pregnancy_complications",
@@ -177,29 +162,29 @@
             "answerOption": [
                 {
                     "valueCoding": {
-                        "code": "YES",
+                        "code": "yes",
                         "display": "Yes"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "NO",
+                        "code": "no",
                         "display": "No"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "PreferNotToSay",
+                        "code": "prefernottosay",
                         "display": "Prefer not to say"
                     }
                 }
             ],
             "enableWhen": [
                 {
-                    "question": "4",
+                    "question": "prev_pregnancy",
                     "operator": "=",
                     "answerCoding": {
-                        "code": "YES"
+                        "code": "yes"
                     }
                 }
             ]
@@ -211,53 +196,47 @@
             "answerOption": [
                 {
                     "valueCoding": {
-                        "code": "Diabetes",
+                        "code": "diabetes",
                         "display": "Diabetes"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "Hypertension",
+                        "code": "hypertension",
                         "display": "Hypertension"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "PretermBirth",
+                        "code": "pretermbirth",
                         "display": "Baby born more than 3 weeks early"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "HeavyBleeding",
+                        "code": "heavybleeding",
                         "display": "Heavy bleeding before, during, or after giving birth"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "CSection",
+                        "code": "csection",
                         "display": "C-section"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "LossOfBaby",
+                        "code": "lossofbaby",
                         "display": "Loss of the baby after 3 months"
-                    }
-                },
-                {
-                    "valueCoding": {
-                        "code": "Other",
-                        "display": "Other"
                     }
                 }
             ],
             "enableWhen": [
                 {
-                    "question": "8",
+                    "question": "prev_pregnancy_complications",
                     "operator": "=",
                     "answerCoding": {
-                        "code": "YES"
+                        "code": "yes"
                     }
                 }
             ],
@@ -269,10 +248,10 @@
             "type": "string",
             "enableWhen": [
                 {
-                    "question": "9",
+                    "question": "prev_pregnancy_complications",
                     "operator": "=",
                     "answerCoding": {
-                        "code": "Other"
+                        "code": "yes"
                     }
                 }
             ]
