@@ -6,7 +6,7 @@
     "subjectType": [
         "Patient"
     ],
-    "date": "@today()",
+    "date": "2024-03-12",
     "item": [
         {
             "linkId": "insurance_types",
@@ -130,7 +130,7 @@
                 },
                 {
                     "valueCoding": {
-                        "code": "highbloodpressure",
+                        "code": "high_blood_pressure",
                         "display": "High blood pressure"
                     }
                 },
@@ -145,7 +145,10 @@
                 {
                     "question": "health_conditions",
                     "operator": "=",
-                    "answerBoolean": true
+                    "answerBoolean": true,
+                    "answerCoding": {
+                        "code": "yes"
+                    }
                 }
             ],
             "repeats": true
@@ -208,25 +211,37 @@
                 },
                 {
                     "valueCoding": {
-                        "code": "pretermbirth",
+                        "code": "premature",
                         "display": "Baby born more than 3 weeks early"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "heavybleeding",
-                        "display": "Heavy bleeding before, during, or after giving birth"
+                        "code": "bleed_before",
+                        "display": "Heavy bleeding before birth"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "csection",
+                        "code": "bleed_during",
+                        "display": "Heavy bleeding during birth"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "bleed_after",
+                        "display": "Heavy bleeding after birth"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "c_section",
                         "display": "C-section"
                     }
                 },
                 {
                     "valueCoding": {
-                        "code": "lossofbaby",
+                        "code": "loss_of_baby",
                         "display": "Loss of the baby after 3 months"
                     }
                 }
