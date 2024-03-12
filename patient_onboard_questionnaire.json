@@ -69,7 +69,7 @@
         },
         {
             "linkId": "prev_pregnancy",
-            "text": "Have you ever been pregnant before? (YES/NO/Prefer not to say)",
+            "text": "Have you ever been pregnant before?",
             "type": "choice",
             "answerOption": [
                 {
@@ -208,15 +208,6 @@
             "linkId": "prev_pregnancy_complications_list",
             "text": "What complications did you experience in your previous pregnancy?",
             "type": "choice",
-            "enableWhen": [
-                {
-                    "question": "8",
-                    "operator": "=",
-                    "answerCoding": {
-                        "code": "YES"
-                    }
-                }
-            ],
             "answerOption": [
                 {
                     "valueCoding": {
