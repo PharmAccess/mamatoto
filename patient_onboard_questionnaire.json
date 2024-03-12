@@ -1,7 +1,7 @@
 {
     "resourceType": "Questionnaire",
     "id": "308",
-    "url": "http://example.org/fhir/Questionnaire/example-questionnaire",
+    "url": "https://raw.githubusercontent.com/turnhub/mamatoto/main/patient_onboard_questionnaire.json",
     "status": "active",
     "subjectType": ["Patient"],
     "date": "@today()",
