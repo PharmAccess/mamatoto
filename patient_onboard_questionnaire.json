@@ -156,7 +156,17 @@
         {
             "linkId": "health_conditions_other",
             "text": "Please list any other conditions",
-            "type": "string"
+            "type": "string",
+            "enableWhen": [
+                {
+                    "question": "health_conditions",
+                    "operator": "=",
+                    "answerBoolean": true,
+                    "answerCoding": {
+                        "code": "yes"
+                    }
+                }
+            ]
         },
         {
             "linkId": "prev_pregnancy_complications",
