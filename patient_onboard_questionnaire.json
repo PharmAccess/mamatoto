@@ -105,8 +105,8 @@
                 },
                 {
                     "valueCoding": {
-                        "code": "no",
-                        "display": "No"
+                        "code": "none",
+                        "display": "None"
                     }
                 },
                 {
