@@ -26,7 +26,7 @@
             "linkId": "last_menstrual_cycle",
             "text": "When was your last menstrual period?",
             "type": "date",
-            "required": "false"
+            "required": "true"
         },
         {
             "linkId": "prev_pregnancy",
