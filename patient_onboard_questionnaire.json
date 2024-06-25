@@ -37,26 +37,8 @@
             "answerOption": [
                 {
                     "valueCoding": {
-                        "code": "ssuh",
-                        "display": "St. Scholastica Uzima Hospital"
-                    }
-                },
-                {
-                    "valueCoding": {
                         "code": "nmslk",
-                        "display": "Nimoli Medical Services Ltd Kasarani"
-                    }
-                },
-                {
-                    "valueCoding": {
-                        "code": "mmnh",
-                        "display": "Mkunga Maternity and Nursing Home"
-                    }
-                },
-                {
-                    "valueCoding": {
-                        "code": "msnhe",
-                        "display": "Marie Stopes Nursing Home Eastleigh"
+                        "display": "Nimoli Hopsital - Kasarani"
                     }
                 }
             ]
