@@ -9,29 +9,8 @@
     "date": "2024-03-12",
     "item": [
         {
-            "linkId": "insurance_types",
-            "text": "Are you covered by any of the following types of insurance?",
-            "type": "choice",
-            "required": true,
-            "answerOption": [
-                {
-                    "valueCoding": {
-                        "code": "nhif",
-                        "display": "NHIF"
-                    }
-                },
-                {
-                    "valueCoding": {
-                        "code": "private",
-                        "display": "Private Insurance"
-                    }
-                }
-            ],
-            "repeats": true
-        },
-        {
             "linkId": "hospital_selection",
-            "text": "At which hospital would you like to be treated?",
+            "text": "Which hospital would you like to be treated at?",
             "type": "choice",
             "repeats": false,
             "answerOption": [
