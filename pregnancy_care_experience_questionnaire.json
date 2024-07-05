@@ -1,0 +1,69 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "response-pregnancy-care-experience",
+  "questionnaire": "Questionnaire/pregnancy-care-experience",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "authored": "2024-07-05T10:00:00Z",
+  "item": [
+    {
+      "linkId": "1",
+      "text": "The care providers listened to me and understood my situation",
+      "answer": [
+        {
+          "valueInteger": 8
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "I could easily understand the information they gave me",
+      "answer": [
+        {
+          "valueInteger": 9
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "They used information I shared in the last visit to understand my situation",
+      "answer": [
+        {
+          "valueInteger": 7
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "After this visit, I feel supported and confident for the next step in my pregnancy",
+      "answer": [
+        {
+          "valueInteger": 10
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Were important things missing in the service experience?",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "yes",
+            "display": "Yes"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "5.1",
+      "text": "Please briefly describe in a single message, what was missing?",
+      "answer": [
+        {
+          "valueString": "There was a lack of detailed information about the next steps in the care plan."
+        }
+      ]
+    }
+  ]
+}
