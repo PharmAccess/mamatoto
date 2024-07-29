@@ -22,6 +22,12 @@
                 },
                 {
                     "valueCoding": {
+                        "code": "nmslt",
+                        "display": "Nimoli Medical Services Ltd Tassia"
+                    }
+                },
+                {
+                    "valueCoding": {
                         "code": "msnhe",
                         "display": "Marie Stopes Nursing Home Eastleigh"
                     }
