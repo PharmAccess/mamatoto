@@ -17,7 +17,13 @@
                 {
                     "valueCoding": {
                         "code": "nmslk",
-                        "display": "Nimoli Hopsital - Kasarani"
+                        "display": "Nimoli Medical Services Ltd Kasarani"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "msnhe",
+                        "display": "Marie Stopes Nursing Home Eastleigh"
                     }
                 }
             ]
