@@ -31,6 +31,12 @@
                         "code": "msnhe",
                         "display": "Marie Stopes Nursing Home Eastleigh"
                     }
+                },
+                {
+                    "valueCoding": {
+                        "code": "gm",
+                        "display": "Gawa Medical"
+                    }
                 }
             ]
         },
