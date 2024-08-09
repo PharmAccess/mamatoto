@@ -30,7 +30,7 @@
     },
     {
       "linkId": "2",
-      "text": "I could easily understand the information they gave me",
+      "text": "They gave me all the information I need at this time",
       "type": "integer",
       "extension": [
         {
@@ -49,7 +49,7 @@
     },
     {
       "linkId": "3",
-      "text": "They used information I shared in the last visit to understand my situation",
+      "text": "I could easily understand the information they gave me",
       "type": "integer",
       "extension": [
         {
@@ -68,7 +68,7 @@
     },
     {
       "linkId": "4",
-      "text": "After this visit, I feel supported and confident for the next step in my pregnancy",
+      "text": "They used information I shared in the last visit to understand my situation",
       "type": "integer",
       "extension": [
         {
@@ -87,6 +87,25 @@
     },
     {
       "linkId": "5",
+      "text": "After this visit, I feel supported and confident for the next step in my pregnancy",
+      "type": "integer",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "slider",
+                "display": "Slider"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "6",
       "text": "Were important things missing in the service experience?",
       "type": "choice",
       "answerOption": [
@@ -105,12 +124,12 @@
       ]
     },
     {
-      "linkId": "5.1",
+      "linkId": "6.1",
       "text": "Please briefly describe in a single message, what was missing?",
       "type": "string",
       "enableWhen": [
         {
-          "question": "5",
+          "question": "6",
           "operator": "=",
           "answerCoding": {
             "code": "yes"
