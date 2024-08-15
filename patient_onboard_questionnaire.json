@@ -37,6 +37,12 @@
                         "code": "gm",
                         "display": "Gawa Medical"
                     }
+                },
+                {
+                    "valueCoding": {
+                        "code": "wj",
+                        "display": "Wananchi Jamii"
+                    }
                 }
             ]
         },
