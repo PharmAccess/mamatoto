@@ -17,13 +17,13 @@
                 {
                     "valueCoding": {
                         "code": "nmslk",
-                        "display": "Nimoli Medical Services Ltd Kasarani"
+                        "display": "Nimoli Hospital - Kasarani"
                     }
                 },
                 {
                     "valueCoding": {
                         "code": "nmslt",
-                        "display": "Nimoli Medical Services Ltd Tassia"
+                        "display": "Nimoli Hospital - Tassia"
                     }
                 },
                 {
@@ -42,6 +42,72 @@
                     "valueCoding": {
                         "code": "wj",
                         "display": "Wananchi Jamii"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmcu",
+                        "display": "Penda Medical Centre Umoja"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmcu1",
+                        "display": "Penda Medical Centre Umoja 1"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmcz",
+                        "display": "Penda Medical Centre Zimmerman"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmct",
+                        "display": "Penda Medical Centre Tassia"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmcmn",
+                        "display": "Penda Medical Centre Mathare North"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmckw",
+                        "display": "Penda Medical Centre Kahawa West"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmcg45",
+                        "display": "Penda Medical Centre Githurai 45"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmck",
+                        "display": "Penda Medical Centre Kasarani"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmck2",
+                        "display": "Penda Medical Centre Kawangware"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "pmcks",
+                        "display": "Penda Medical Centre Kimathi Street"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "smmhm",
+                        "display": "St. Mary's Mission Hospital Mumias"
                     }
                 }
             ]
