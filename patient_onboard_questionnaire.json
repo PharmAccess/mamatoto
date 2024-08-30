@@ -109,6 +109,12 @@
                         "code": "smmhm",
                         "display": "St. Mary's Mission Hospital Mumias"
                     }
+                },
+                {
+                    "valueCoding": {
+                        "code": "mch",
+                        "display": "Mother and Child Hospital"
+                    }
                 }
             ]
         },
