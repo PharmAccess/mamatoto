@@ -115,6 +115,30 @@
                         "code": "mch",
                         "display": "Mother and Child Hospital"
                     }
+                },
+                {
+                    "valueCoding": {
+                        "code": "shar",
+                        "display": "Shalom Hospital - Arthi River"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "mmnh",
+                        "display": "Mkunga Maternity and Nursing Home"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "sh",
+                        "display": "Scion Hospital"
+                    }
+                },
+                {
+                    "valueCoding": {
+                        "code": "jh",
+                        "display": "Jumuia Hospital"
+                    }
                 }
             ]
         },
